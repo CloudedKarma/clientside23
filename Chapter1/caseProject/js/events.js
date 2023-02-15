@@ -25,7 +25,7 @@ let discountLocation = ["Hattiesburg", "Petal", "Laurel", "Laurel",
                      "Laurel", "Picayune", "Hattiesburg", "Hattiesburg"];
 
 // Discount Amounts
-let discount = [25, 50, 33, 45, 75, 20, 25, 35, 55, 70, 80, 30, 25, 50, 33, 45, 75, 20, 25, 35, 50, 80, 90];
+let discount = [25, 50, 33, 45, 75, 0, 25, 0, 55, 70, 80, 30, 25, 50, 0, 45, 75, 20, 0, 35, 50, 80, 90];
                       
                       
                       

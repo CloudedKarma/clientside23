@@ -52,7 +52,7 @@
             {
                 gameInfo += "Great Discount";
             }
-            else if (discount[i] > 20)
+            else if (discount[i] > 0)
             {
                 gameInfo += "Good Discount";
             }
