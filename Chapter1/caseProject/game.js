@@ -30,9 +30,10 @@ function getEstimate()
     let total = cost + tax;
     document.getElementById("total").innerHTML = formatCurrency(total);
 }
-function formatCurrency(value) {
+function formatCurrency(value) 
+{
     return "$" + value.toFixed(2);
- }
+}
  
 // let gta = "gta.jpg";
 // let minecraft = "minecraft.jpg";
