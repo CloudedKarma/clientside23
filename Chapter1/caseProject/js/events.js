@@ -1,13 +1,8 @@
-/*    JavaScript 7th Edition
-      Chapter 3
-      Chapter case
+/*
+      Author: Kadin
+      Date: 
 
-      Tipton Turbines
-      Baseball Schedule Data
-      Author: 
-      Date:   
-
-      Filename: schedule.js
+      Filename: events.js
 */
 
 // Discount Days

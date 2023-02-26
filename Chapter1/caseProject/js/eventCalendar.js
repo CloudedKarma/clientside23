@@ -1,9 +1,4 @@
-/*    JavaScript 7th Edition
-     Chapter 3
-     Chapter case
-
-     Tipton Turbines
-     Program to display games results in a web table
+/* 
      Author: Kadin Dengler
      Date:   02/02/23
 
