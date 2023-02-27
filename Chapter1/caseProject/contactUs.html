@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>Kadin's Game Website</title>
-    <meta charset="utf-8">
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Kadin's Game Website</title>
+        <script src = "js/contact.js" defer></script>
+        <link rel="stylesheet" href="css/contact.css" />
+        
+    </head>
+        
+    <body>
+        <header>
+            <h2>Contact Us</h2>
+        </header>
+    
+         <!-- The nav shows the links to other pages of my website  -->
+        <nav>
+            <p>
+                <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/homePage.html" > Home &nbsp; &#9475; &nbsp;</a> 
+                <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/aboutUsPage.html" > About Us &nbsp; &#9475; &nbsp;</a>
+                <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/gameList.html" > Video Games &nbsp; &#9475; &nbsp;</a>
+                <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/Events.html" > Events &nbsp; &#9475; &nbsp;</a> 
+                <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/contactUs.html" > Contact Us &nbsp; &#9475; &nbsp;</a>
+    
+            </p>
+        </nav>
+        <div class="contact-container">
+            <div class="right-col">
+                <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+            </label>
+            <div class="description">Dark Mode</div>
+            </div>
 
-<body>
-	
-	<header>
-		<h1>Contact Us</h1>
-	</header>
-
-    <!-- The nav shows the links to other pages of my website -->
-    <nav>
-        <p>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/homePage.html" > Home &nbsp; &#9475; &nbsp;</a> 
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/aboutUsPage.html" > About Us &nbsp; &#9475; &nbsp;</a>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/gameList.html" > Video Games &nbsp; &#9475; &nbsp;</a>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/Events.html" > Events &nbsp; &#9475; &nbsp;</a> 
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/contactUs.html" > Contact Us &nbsp; &#9475; &nbsp;</a>
-
-        </p>
-    </nav>
-    <main>
-        <article>
-            <h2>Contact our Support and Sales team</h2>
-            <p>Please fill out a form so we can better help you</p>
-        </article>
-    </main>
-	<footer>
-		<p> &copy; Copyright 2023. All Rights Reserved.</p>
-	</footer>
-	
-</body>
+                <h2>Contact our Support and Sales team</h2>
+                <h3>Please fill out a form so we can better help you</h3>
+                <h1>Contact us</h1>
+                
+                <form id="contact-form" method="post">
+                <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                <label for="message">Message</label>
+            <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
+                <button type="submit" id="submit" name="submit">Send</button>
+            
+            </form>
+            <div id="error"></div>
+            <div id="success-msg"></div>
+            </div>
+        </div>
+    </body>
 </html>
