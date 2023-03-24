@@ -1,3 +1,10 @@
+const GTA = 59.99;
+const MINECRAFT = 49.99;
+const HOGWARTS = 60.99;
+const HALO = 39.99;
+const TAX = 0.07;
+const DISCOUNT = 0.1;
+
 function getEstimate() {
     let cost = 0;
     let buyGta = document.getElementById("gta").checked;
