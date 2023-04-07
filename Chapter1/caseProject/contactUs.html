@@ -1,58 +1,67 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Kadin's Game Website</title>
-        <script src = "js/contact.js" defer></script>
-        <link rel="stylesheet" href="css/contact.css">
-        
-    </head>
-        
-    <body>
-        <header>
-            <h2>Contact Us</h2>
-        </header>
-    
-         <!-- The nav shows the links to other pages of my website  -->
-        <nav>
-            <p>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/homePage.html" > Home &nbsp; &#9475; &nbsp;</a> 
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/aboutUsPage.html" > About Us &nbsp; &#9475; &nbsp;</a>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/gameList.html" > Video Games &nbsp; &#9475; &nbsp;</a>
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/Events.html" > Events &nbsp; &#9475; &nbsp;</a> 
-            <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/contactUs.html" > Contact Us &nbsp; &#9475; &nbsp;</a>
-	        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/webinfo.html"> Web Securty info;</a>
-    
-            </p>
-        </nav>
-        <div class="contact-container">
-            <div class="right-col">
-                <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <div class="slider round"></div>
-                </label>
-            <div class="description">Dark Mode</div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kadin's Game Website</title>
+    <script src="js/contact.js" defer></script>
+    <link rel="stylesheet" href="css/contact.css">
 
-                <h2>Contact our Support and Sales team</h2>
-                <h3>Please fill out a form so we can better help you</h3>
-                <h1>Contact us</h1>
-                
-            <form id="contact-form" method="post">
-                <label for="name">Full name</label>
+</head>
+
+<body>
+<header>
+    <h2>Contact Us</h2>
+</header>
+
+<!-- The nav shows the links to other pages of my website  -->
+<nav>
+    <p>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/homePage.html"> Home &nbsp; &#9475; &nbsp;</a>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/aboutUsPage.html"> About Us &nbsp; &#9475; &nbsp;</a>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/gameList.html"> Video Games &nbsp; &#9475; &nbsp;</a>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/Events.html"> Events &nbsp; &#9475; &nbsp;</a>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/contactUs.html"> Contact Us &nbsp; &#9475; &nbsp;</a>
+        <a href="https://cloudedkarma.github.io/clientside23/Chapter1/caseProject/webinfo.html"> Web Security Info;</a>
+
+    </p>
+</nav>
+
+<div class="contact-container">
+    <div class="right-col">
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <div class="slider round"></div>
+            </label>
+            <div class="description">Dark Mode</div>
+        </div>
+
+        <h2>Contact our Support and Sales team</h2>
+        <h3>Please fill out a form so we can better help you</h3>
+        <h1>Contact us</h1>
+
+        <form id="contact-form" method="post">
+            <label for="name">Full name</label>
             <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-                <label for="email">Email Address</label>
+            <label for="email">Email Address</label>
             <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-                <label for="message">Message</label>
+            <label for="message">Message</label>
             <textarea rows="6" placeholder="Your Message" id="message" name="message" required></textarea>
-                <button type="submit" id="submit" name="submit">Send</button>
-            </form>
-            <div id="error"></div>
-            <div id="success-msg"></div>
-            <main>
-                <br></br>
-                <br></br>
+            <label for="options">Select your options:</label>
+            <select id="options" name="options" multiple>
+                <option value="bug">Bug report</option>
+                <option value="feature">Feature request</option>
+                <option value="feedback">General feedback</option>
+                <option value="user-experience">User experience</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit" id="submit" name="submit">Send</button>
+        </form>
+        <div id="error"></div>
+        <div id="success-msg"></div>
+        <main>
+            <br></br>
+            <br></br>
                 <p>In this module i used the debuging method of loking where there where centax errors and after i finished the syntax errors i moved onto logic errors.</p>
                 <p>To do the logic errors i was slowly going throw all the parts and running it. What i mean by slowly going through the parts is i went to inspect then i went to scources and used breakpoints.</p>
                 <p>Then i used it to see where the program was broken and then fixed it. After i finished with the breakpoints all the errors were gone.</p>
