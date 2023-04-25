@@ -1,6 +1,6 @@
 /*  JavaScript 7th Edition
-    Chapter 2
-    Hands-on Project 2-4
+    Chapter 6
+    Hands-on Project 6-4
 
     Filename: styles.css
 */
@@ -42,11 +42,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   width: 960px;
+   width: 1050px;
    background: white;
-   margin: 30px auto;
-   font-family: Verdana, Geneva, sans-serif;
-   position: relative;   
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
 }
 
 ol, ul {
@@ -55,7 +54,7 @@ ol, ul {
 
 /* page header */
 header {
-   background: #330570;
+   background: #5472B2;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
@@ -65,81 +64,52 @@ header {
 
 /* main content */
 article {
-   width: 960px;
-   height: 450px;
+   width: 1050px;
    text-align: left;
-   background: #FFCF40;
+   background: #FFDB70;
+   position: relative;
 }
 
-article h2 {
-   font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
+
+
+/*-------------------- Project Styles ------------------*/
+
+article {
+   padding: 20px 50px 60px;
+}
+article h1 {
+   font-size: 1.7em;
+   margin-bottom: 20px;
 }
 
-/* form */
 form {
-   margin: 0 auto;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
 }
 
-input {
-   float: left;
-   clear: left;
-   margin: 10px;
+fieldset {
+   margin: 20px;
 }
 
-label {
-   float: left;
-   font-size: 1.4em;
+fieldset legend {
+   margin-bottom: 10px;
 }
 
-aside {
-   position: absolute;
-   top: 120px;
-   left: 400px;
-   outline: 1px solid red;
+fieldset select {
+   min-width: 150px;
 }
 
-aside span {
-   position: absolute;
-   font-size: 1.4em;
+input[type="button"] {
+   display: block;
+   height: 50px;
+   width: 175px;
 }
 
-aside span#totalLab {
-   top: 0px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#foodTotal {
-   top: 0px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}   
-
-aside span#taxLab {
-   top: 40px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#foodTax {
-   top: 40px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}
-
-aside span#billLab {
-   top: 80px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#totalBill {
-   top: 80px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
+p#vehicle {
+   text-align: center;
+   border-top: 1px solid rgb(125, 125, 125);
+   padding-top: 10px;
 }

@@ -1,6 +1,6 @@
 /*  JavaScript 7th Edition
-    Chapter 2
-    Hands-on Project 2-4
+    Chapter 3
+    Hands-on Project 3-1
 
     Filename: styles.css
 */
@@ -44,9 +44,8 @@ body {
    line-height: 1;
    width: 960px;
    background: white;
-   margin: 30px auto;
-   font-family: Verdana, Geneva, sans-serif;
-   position: relative;   
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
 }
 
 ol, ul {
@@ -55,7 +54,7 @@ ol, ul {
 
 /* page header */
 header {
-   background: #330570;
+   background: #5472B2;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
@@ -68,7 +67,8 @@ article {
    width: 960px;
    height: 450px;
    text-align: left;
-   background: #FFCF40;
+   background: #FFDB70;
+   position: relative;
 }
 
 article h2 {
@@ -79,7 +79,7 @@ article h2 {
 
 /* form */
 form {
-   margin: 0 auto;
+   float: left;
 }
 
 input {
@@ -93,53 +93,17 @@ label {
    font-size: 1.4em;
 }
 
+/* total div */
+article div {
+   width: 50%;
+   float: right;
+   font-size: 18px;
+   font-weight: bold;
+}
+
 aside {
+   font-size: 1.5em;
    position: absolute;
-   top: 120px;
    left: 400px;
-   outline: 1px solid red;
-}
-
-aside span {
-   position: absolute;
-   font-size: 1.4em;
-}
-
-aside span#totalLab {
-   top: 0px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#foodTotal {
-   top: 0px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}   
-
-aside span#taxLab {
-   top: 40px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#foodTax {
-   top: 40px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}
-
-aside span#billLab {
-   top: 80px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#totalBill {
-   top: 80px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
+   top: 20px;
 }

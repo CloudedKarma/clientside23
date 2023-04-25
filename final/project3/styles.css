@@ -1,6 +1,6 @@
 /*  JavaScript 7th Edition
-    Chapter 2
-    Hands-on Project 2-4
+    Chapter 3
+    Hands-on Project 3-4
 
     Filename: styles.css
 */
@@ -42,11 +42,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   width: 960px;
+   max-width: 960px;
    background: white;
-   margin: 30px auto;
-   font-family: Verdana, Geneva, sans-serif;
-   position: relative;   
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif; 
 }
 
 ol, ul {
@@ -55,91 +54,71 @@ ol, ul {
 
 /* page header */
 header {
-   background: #330570;
+   background: #FFE373;
    width: 100%;
-   color: #FFFFFF;
+   color: black;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
 }
 
 /* main content */
 article {
    width: 960px;
-   height: 450px;
-   text-align: left;
-   background: #FFCF40;
+   text-align: center;
+   background: #BFA230;
+   padding-bottom: 20px;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
 }
 
 article h2 {
    font-weight: bold;
-   font-size: 24px;
+   font-size: 2em;
    padding: 10px;
 }
 
-/* form */
-form {
-   margin: 0 auto;
+/* review styles */
+
+table {
+   width: 450px;
+   border-collapse: collapse;
+   margin: 15px auto;
+   background-color: #FFE373;
+   border-radius: 20px;
+   box-shadow: 3px 3px 20px black;
 }
 
-input {
-   float: left;
-   clear: left;
-   margin: 10px;
+table.prime {
+   background: url(prime.png) no-repeat top right rgba(119,223,63,1.00);
 }
 
-label {
-   float: left;
-   font-size: 1.4em;
+table.new {
+   background: url(new.png) no-repeat top right rgba(149,239,220,1.00);
 }
 
-aside {
-   position: absolute;
-   top: 120px;
-   left: 400px;
-   outline: 1px solid red;
+table caption {
+   font-size: 1.2em;
+   margin: 0 0 10px 0;
 }
 
-aside span {
-   position: absolute;
-   font-size: 1.4em;
+table tr th {
+   font-weight: bold;
+   text-align: left;
+   padding: 10px 0 0 15px;
+   width: 120px;
 }
 
-aside span#totalLab {
-   top: 0px;
-   left: 0px;
-   width: 220px;   
+table tr td {
+   text-align: left;
+   padding: 5px 0 0 12px;
 }
 
-aside span#foodTotal {
-   top: 0px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}   
-
-aside span#taxLab {
-   top: 40px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#foodTax {
-   top: 40px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}
-
-aside span#billLab {
-   top: 80px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#totalBill {
-   top: 80px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
+table tr:last-of-type td {
+   padding: 20px;
+   text-align: justify;
 }

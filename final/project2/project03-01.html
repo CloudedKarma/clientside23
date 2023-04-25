@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hands-on Project 3-1</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="project03-01.js" defer></script>
+   </head>
+   <body>
+      <header>
+         <h1>
+            Hands-on Project 3-1
+         </h1>
+      </header>
+      <article>
+         <h2>Lunch selections</h2>
+         <form id="lunchForm">
+            <p>
+               <input type="checkbox" id="chickenCheckbox" value="11.95" />
+               <label for="chickenCheckbox">Fried chicken ($11.95)</label>
+               <input type="number" id="chickenQty" value="0" min="0" />
+            </p>
+            <p>
+               <input type="checkbox" id="halibutCheckbox" value="13.95" />
+               <label for="halibutCheckbox">Fried halibut ($13.95)</label>
+               <input type="number" id="halibutQty" value="0" min="0" />
+            </p>
+            <p>
+               <input type="checkbox" id="burgerCheckbox" value="10.95" />
+               <label for="burgerCheckbox">Hamburger ($10.95)</label>
+               <input type="number" id="burgerQty" value="0" min="0" />
+            </p>
+            <p>
+               <input type="checkbox" id="salmonCheckbox" value="17.95" />
+               <label for="salmonCheckbox">Grilled salmon ($17.95)</label>
+               <input type="number" id="salmonQty" value="0" min="0" />
+            </p>
+            <p>
+               <input type="checkbox" id="saladCheckbox" value="8.95" />
+               <label for="saladCheckbox">Side salad ($8.95)</label>
+               <input type="number" id="saladQty" value="0" min="0" />
+            </p>
+         </form>
+         <aside>
+            <p>Total Cost of Items: <span id="billTotal">$0</span></p>
+            <p>TAX: <span id="taxtotal">$0</span></p>
+            <p>TOTAL: <span id="grandTotal">$0</span></p>
+
+         </aside>
+      </article>
+   </body>
+</html>

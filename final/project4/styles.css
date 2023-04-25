@@ -1,6 +1,6 @@
 /*  JavaScript 7th Edition
-    Chapter 2
-    Hands-on Project 2-4
+    Chapter 4
+    Hands-on Project 4-4
 
     Filename: styles.css
 */
@@ -44,9 +44,8 @@ body {
    line-height: 1;
    width: 960px;
    background: white;
-   margin: 30px auto;
-   font-family: Verdana, Geneva, sans-serif;
-   position: relative;   
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
 }
 
 ol, ul {
@@ -55,7 +54,7 @@ ol, ul {
 
 /* page header */
 header {
-   background: #330570;
+   background: #5472B2;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
@@ -65,81 +64,82 @@ header {
 
 /* main content */
 article {
+   position: relative;
    width: 960px;
-   height: 450px;
+   height: 300px;
    text-align: left;
-   background: #FFCF40;
+   background: #FFDB70;
+   position: relative;
 }
 
-article h2 {
-   font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
+article > h2 {
+   font-weight: normal;
+   font-size: 2em;
+   padding: 20px 0 10px 0;
+   text-align: center;
+   margin: 0 0 20px 0;
 }
 
-/* form */
-form {
-   margin: 0 auto;
-}
-
-input {
-   float: left;
-   clear: left;
-   margin: 10px;
+div#warning {
+   position: absolute;
+   top: 180px;
+   left: 70px;
+   color: red;
 }
 
 label {
    float: left;
-   font-size: 1.4em;
+   display: block;
+   clear: left;
+   width: 110px;
+   margin-bottom: 10px;
+   margin-left: 70px;
 }
 
-aside {
+input {
+   display: block;
+   float: left;
+   margin-left: 20px;
+   margin-bottom: 10px;
+   text-align: right;
+   width: 100px;
+}
+
+input#change {
+   padding-right: 15px;
+}
+
+aside#bills {
    position: absolute;
-   top: 120px;
-   left: 400px;
-   outline: 1px solid red;
+   top: 50px;
+   left: 480px;
 }
 
-aside span {
+aside#coins {
    position: absolute;
-   font-size: 1.4em;
+   top: 50px;
+   left: 680px;
 }
 
-aside span#totalLab {
-   top: 0px;
-   left: 0px;
-   width: 220px;   
+aside h2 {
+   font-size: 1.2em;
+   margin: 0;
+   text-align: center;
+   margin: 20px 0 10px;
 }
 
-aside span#foodTotal {
-   top: 0px;
-   left: 280px;
+aside div:nth-of-type(odd) {
+   float: left;
    width: 100px;
-   text-align: right;
-}   
-
-aside span#taxLab {
-   top: 40px;
-   left: 0px;
-   width: 220px;   
+   clear: left;
 }
 
-aside span#foodTax {
-   top: 40px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
-}
-
-aside span#billLab {
-   top: 80px;
-   left: 0px;
-   width: 220px;   
-}
-
-aside span#totalBill {
-   top: 80px;
-   left: 280px;
-   width: 100px;
-   text-align: right;
+aside div:nth-of-type(even) {
+   float: left;
+   width: 30px;
+   height: 30px;
+   outline: 1px solid gray;
+   text-align: center;
+   line-height: 30px;
+   background-color: ivory;
 }

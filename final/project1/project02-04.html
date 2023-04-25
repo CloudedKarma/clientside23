@@ -2,10 +2,11 @@
 <html>
 <head>
    <!--
-      JavaScript 6th Edition
+      JavaScript 7th Edition
       Chapter 2
-      Hands-on Project 2-4
+      Project 02-04
 
+      Application to calculate the cost of a restaurant order plus tax
       Author: 
       Date:   
 
@@ -13,30 +14,45 @@
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 2-4</title>
+   <title>Project 02-04</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project02-04.js" defer></script>
 </head>
 
 <body>
    <header>
       <h1>
-         Hands-on Project 2-4
+         Lunch selections
       </h1>
    </header>
 
    <article>
-      <h2>Lunch selections</h2>
       <form>
-         <input type="checkbox" id="chicken" value="10.95" />
-         <label for="chicken">Fried chicken ($10.95)</label>
-         <input type="checkbox" id="halibut" value="13.95" />
-         <label for="halibut">Fried halibut ($13.95)</label>
-         <input type="checkbox" id="burger" value="9.95" />
-         <label for="burger">Hamburger ($9.95</label>
-         <input type="checkbox" id="salmon" value="18.95" />
-         <label for="salmon">Grilled salmon ($18.95)</label>
-         <input type="checkbox" id="salad" value="7.95" />
-         <label for="salad">Side salad ($7.95)</label>
+         <p>
+            <input type="checkbox" id="chicken" value="10.95" />
+            <label for="chicken">Fried chicken ($10.95)</label>
+            <input type="number" id="chickenQty" value="0" min="0">
+         </p>
+         <p>
+            <input type="checkbox" id="halibut" value="13.95" />
+            <label for="halibut">Fried halibut ($13.95)</label>
+            <input type="number" id="halibutQty" value="0" min="0">
+         </p>
+         <p>
+            <input type="checkbox" id="burger" value="9.95" />
+            <label for="burger">Hamburger ($9.95)</label>
+            <input type="number" id="burgerQty" value="0" min="0">
+         </p>
+         <p>
+            <input type="checkbox" id="salmon" value="18.95" />
+            <label for="salmon">Grilled salmon ($18.95)</label>
+            <input type="number" id="salmonQty" value="0" min="0">
+         </p>
+         <p>
+            <input type="checkbox" id="salad" value="7.95" />
+            <label for="salad">Side salad ($7.95)</label>
+            <input type="number" id="saladQty" value="0" min="0">
+         </p>
       </form>
    </article>
    
@@ -46,11 +62,7 @@
       <span id="taxLab">Tax</span>
       <span id="foodTax"></span>
       <span id="billLab">TOTAL</span>
-      <span id="totalBill"></span>      
+      <span id="totalBill"></span>       
    </aside>
-
-   <div>
-      <p><a href="../index.html">Final Projects main page</a></p>
-   </div>
 </body>
 </html>
