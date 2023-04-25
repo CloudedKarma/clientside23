@@ -1,4 +1,3 @@
-"strict"
 /*    JavaScript 7th Edition
       Chapter 4
       Project 04-04
@@ -82,20 +81,14 @@ function calcChange(changeValue) {
    changeValue -= coin5Amt*0.05;  
    
    // Determine the number of pennies
-   // The Math.round() method rounds the value to the nearest integer
    let coin1Amt = Math.round(changeValue*100);
    document.getElementById("coin1").innerHTML = coin1Amt;
+   
+   // Check if cash amount is greater than $100
+   checkAmount();
 }
 
-
-
-
-
-
-
-
 /* ================================================================= */
-
 // Function to determine the largest whole number of currency units that 
 // can fit within the cash value
 function determineCoin(cashValue, currencyUnit) {
@@ -107,3 +100,16 @@ function determineCoin(cashValue, currencyUnit) {
  function formatCurrency(value) {
     return value.toFixed(2);
  }
+
+// Function to check if the cash input is greater than $100
+function checkAmount() {
+  var cashInput = document.getElementById("cash");
+  var cashAmount = parseFloat(cashInput.value);
+  var warning = document.getElementById("warning");
+  if (cashAmount > 100) {
+    warning.innerHTML = "Please enter an amount less than or equal to $100.";
+    cashInput.value = "100.00";
+  } else {
+    warning.innerHTML = "";
+  }
+}
